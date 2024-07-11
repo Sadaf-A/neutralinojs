@@ -7,7 +7,7 @@ describe('app.spec: app namespace tests', () => {
         it('works with parameters', async () => {
             let exitCode = runner.run(`
                 setTimeout(() => {
-                    Neutralino.app.exit(0);
+                    Neutralino.app.exit(1);
                 }, 2000);
             `);
             assert.ok(typeof exitCode != undefined);
